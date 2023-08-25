@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumentController">
+   <children>
+      <Polygon fill="DODGERBLUE" layoutX="190.0" layoutY="455.0" points="-50.0, 40.0, 50.0, 40.0, -2.0, 2.0" stroke="#3379b2" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <Line endX="100.0" layoutX="88.0" layoutY="458.0" startX="100.0" startY="-332.0" stroke="#3379b2" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <Line layoutX="288.0" layoutY="123.0" startX="-100.0" stroke="#3379b2" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <Line endX="-76.0" endY="-106.5" layoutX="301.0" layoutY="231.0" startX="-111.5" startY="-18.0" stroke="#3379b2" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <Line endX="8.5" endY="-34.0" layoutX="282.0" layoutY="209.0" startX="8.5" startY="-85.5" stroke="#3379b2" strokeType="OUTSIDE" strokeWidth="3.0" />
+      <TextField fx:id="nomJoueurTxtField" alignment="CENTER" layoutX="481.0" layoutY="214.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="481.0" layoutY="193.0" text="Nom du joueur :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="scoreTxtField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="481.0" layoutY="292.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="481.0" layoutY="271.0" text="Score :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="titreLabel" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="279.0" layoutY="14.0" text="Jeu Du Pendu">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="trouverMotTxtField" alignment="CENTER" editable="false" focusTraversable="false" layoutX="481.0" layoutY="371.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="481.0" layoutY="350.0" prefHeight="21.0" prefWidth="125.0" text="Trouver le mot :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnDebuterEtat" layoutX="37.0" layoutY="538.0" mnemonicParsing="false" onAction="#btnDebuter" text="Débuter le jeu">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="257.0" layoutY="538.0" mnemonicParsing="false" onAction="#btnQuitter" text="Quitter">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Pane layoutX="462.0" layoutY="410.0" prefHeight="159.0" prefWidth="243.0" />
+      <Button fx:id="btnA" layoutX="469.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonA" text="A" />
+      <Button fx:id="btnB" layoutX="503.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonB" text="B" />
+      <Button fx:id="btnC" layoutX="536.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonC" text="C" />
+      <Button fx:id="btnD" layoutX="569.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonD" text="D" />
+      <Button fx:id="btnE" layoutX="602.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonE" text="E" />
+      <Button fx:id="btnF" layoutX="634.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonF" text="F" />
+      <Button fx:id="btnG" layoutX="669.0" layoutY="419.0" mnemonicParsing="false" onAction="#boutonG" text="G" />
+      <Button fx:id="btnH" layoutX="469.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonH" text="H" />
+      <Button fx:id="btnI" layoutX="504.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonI" text="I" />
+      <Button fx:id="btnJ" layoutX="536.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonJ" text="J" />
+      <Button fx:id="btnK" layoutX="569.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonK" text="K" />
+      <Button fx:id="btnL" layoutX="602.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonL" text="L" />
+      <Button fx:id="btnM" layoutX="634.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonM" text="M" />
+      <Button fx:id="btnN" layoutX="669.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonN" text="N" />
+      <Button fx:id="btnO" layoutX="469.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonO" text="O" />
+      <Button fx:id="btnP" layoutX="504.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonP" text="P" />
+      <Button fx:id="btnQ" layoutX="536.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonQ" text="Q" />
+      <Button fx:id="btnR" layoutX="569.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonR" text="R" />
+      <Button fx:id="btnS" layoutX="602.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonS" text="S" />
+      <Button fx:id="btnT" layoutX="634.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonT" text="T" />
+      <Button fx:id="btnU" layoutX="669.0" layoutY="489.0" mnemonicParsing="false" onAction="#boutonU" text="U" />
+      <Button fx:id="btnV" layoutX="504.0" layoutY="528.0" mnemonicParsing="false" onAction="#boutonV" text="V" />
+      <Button fx:id="btnW" layoutX="535.0" layoutY="528.0" mnemonicParsing="false" onAction="#boutonW" prefHeight="25.0" prefWidth="33.0" text="W" />
+      <Button fx:id="btnX" layoutX="571.0" layoutY="528.0" mnemonicParsing="false" onAction="#boutonX" text="X" />
+      <Button fx:id="btnY" layoutX="604.0" layoutY="528.0" mnemonicParsing="false" onAction="#boutonY" text="Y" />
+      <Button fx:id="btnZ" layoutX="637.0" layoutY="528.0" mnemonicParsing="false" onAction="#boutonZ" text="Z" />
+      <Label fx:id="motLabel" alignment="CENTER" layoutX="468.0" layoutY="576.0" prefHeight="58.0" prefWidth="230.0" textAlignment="RIGHT">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Circle fx:id="Tete" fill="#1fff2b" layoutX="291.0" layoutY="204.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="Corps" endX="-17.0" endY="47.0" layoutX="308.0" layoutY="271.0" startX="-17.0" startY="-45.0" visible="false" />
+      <Line fx:id="brasGauche" endX="-62.0" endY="33.0" layoutX="394.0" layoutY="240.0" startX="-100.0" visible="false" />
+      <Line fx:id="brasDroite" endX="-71.0" endY="29.0" layoutX="322.0" layoutY="244.0" startX="-36.70709228515625" startY="-4.0" visible="false" />
+      <Line fx:id="jambeGauche" endX="-62.0" endY="33.0" layoutX="394.0" layoutY="318.0" startX="-100.0" visible="false" />
+      <Line fx:id="jambeDroite" endX="-71.0" endY="29.0" layoutX="322.0" layoutY="322.0" startX="-36.70709228515625" startY="-4.0" visible="false" />
+      <Label fx:id="viesRestantesLabel" alignment="CENTER" layoutX="479.0" layoutY="96.0" prefHeight="44.0" prefWidth="119.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="viesLabel" alignment="CENTER" layoutX="583.0" layoutY="96.0" prefHeight="44.0" prefWidth="53.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="recommencer" layoutX="144.0" layoutY="538.0" mnemonicParsing="false" onAction="#btnRecommencer" prefHeight="25.0" prefWidth="106.0" text="Recommencer">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
